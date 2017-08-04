@@ -9,7 +9,7 @@
         <!doctype html>
 <html>
     <head>
-        <title>Sample App</title>
+        <title>@yield('title', 'Sample') —— Laravel Study</title>
     </head>
     <body>
         @yield('content')
