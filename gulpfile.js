@@ -1,4 +1,4 @@
-var elixir = require('laravel-elixir');
+var elixir = require('laravel-mix');
 elixir(function(mix) {
     mix.sass('app.scss');
 });
