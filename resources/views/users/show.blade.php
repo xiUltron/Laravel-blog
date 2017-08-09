@@ -22,4 +22,3 @@
         </div>
     </div>
 @stop
-@include('shared._user_info', ['user' => $user])
