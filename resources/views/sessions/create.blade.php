@@ -19,6 +19,7 @@
                 @include('shared._errors')
 
                 <form action="{{ route('login') }}" method="post">
+                    {{ csrf_field() }}
                     <div class="form-group">
                         <label for="email">邮箱：</label>
                         <input type="text" class="form-control" name="email" value="{{ old('email') }}">
