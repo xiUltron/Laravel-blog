@@ -6,6 +6,8 @@
  * Time: 14:33
  */
 ?>
+@extends('layouts.default')
+@section('title', '登录')
 
 @section('content')
     <div class="col-md-offset-2 col-md-8">
