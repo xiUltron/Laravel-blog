@@ -29,7 +29,6 @@
                     </div>
 
                     <button class="btn btn-primary" type="submit">登录</button>
-                    <button class="btn btn-pri" id="thisisID" type="submit" name="btnName">登录</button>
                 </form>
 
                 <hr>
