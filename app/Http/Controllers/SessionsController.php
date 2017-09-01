@@ -18,6 +18,7 @@ class SessionsController extends Controller
 
     /**
      * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|void
      */
     public function store(Request $request)
     {
