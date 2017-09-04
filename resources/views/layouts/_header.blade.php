@@ -15,7 +15,7 @@
                     @if(\Illuminate\Support\Facades\Auth::check())
                         <li><a href="#">用户列表</a></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                {{ \Illuminate\Support\Facades\Auth::user()->name }}<b class="create"></b>
+                                {{ \Illuminate\Support\Facades\Auth::user()->name }}<b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
