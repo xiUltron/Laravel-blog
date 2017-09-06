@@ -8,10 +8,11 @@
 ?>
 <div class="col-md-12">
     <footer class="footer">
-        <small class="copyright">
+        <small class="slogon">
             <img src="http://orxfb7mt0.bkt.clouddn.com/google_%20dinosaur.jpg"
                  class="brand-icon">
             Copyright @ 2017 | All Rights Reserved
+            <a href="#"> IT Skynet</a>
         </small>
         <nav>
             <ul>

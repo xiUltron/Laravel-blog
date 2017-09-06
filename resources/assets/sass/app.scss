@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  overflow: auto;
+  overflow:auto;
 }
 
 textarea {
@@ -23,7 +23,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background: rgb(236, 236, 236);
+  background-color: #ffffff;
 }
 
 /* typography */
@@ -98,11 +98,6 @@ footer {
 
   small {
     float: left;
-    display: inline-block;
-    //float: none !important;
-    width: 100%;
-    padding: 10px 0;
-    //text-align: center;
   }
 
   ul {
