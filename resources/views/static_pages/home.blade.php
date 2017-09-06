@@ -8,9 +8,9 @@
 @section('title','主页')
 @section('content')
     <div class="jumbotron">
-        <h1>Hello Laravel</h1>
+        <h1>IT Skynet</h1>
         <p class="lead">
-            你现在看到的是<a href="https://fsdhub.com/books/laravel-essential-training-5.1">Laravel 入门教程</a> 的示例项目主页。
+            你现在看到的是<a href="http://www.itskynet.com">Laravel 入门教程</a> 的示例项目主页。
         </p>
         <p>
             一切，将从这里开始。

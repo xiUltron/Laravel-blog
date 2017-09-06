@@ -11,7 +11,7 @@
         <small class="copyright">
             <img src="http://orxfb7mt0.bkt.clouddn.com/google_%20dinosaur.jpg"
                  class="brand-icon">
-            Copyright @ 2017 | All Rights reserved
+            Copyright @ 2017 | All Rights Reserved
         </small>
         <nav>
             <ul>
