@@ -1,11 +1,11 @@
-{{--<?php--}}
-{{--/**--}}
- {{--* Created by PhpStorm.--}}
- {{--* User: ultron--}}
- {{--* Date: 2017/8/7--}}
- {{--* Time: 14:27--}}
- {{--*/--}}
-{{--?>--}}
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ultron
+ * Date: 2017/8/7
+ * Time: 14:27
+ */
+?>
 {{--<header class="navbar navbar-fixed-top navbar-inverse">--}}
     {{--<div class="container">--}}
         {{--<div class="col-md-offset-1 col-md-10">--}}
