@@ -21,7 +21,7 @@
                                 <li>
                                     <a href="{{ route('users.show', \Illuminate\Support\Facades\Auth::user()->id) }}">个人中心</a>
                                 </li>
-                                <li><a href="#">编辑资料</a></li>
+                                <li><a href="{{ route('users.edit', \Illuminate\Support\Facades\Auth::user()->id) }}">编辑资料</a></li>
                                 <li class="divider"></li>
                                 <li>
                                     <a href="#" id="logout">
