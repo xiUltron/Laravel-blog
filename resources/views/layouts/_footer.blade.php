@@ -9,7 +9,7 @@
 <div class="col-md-12">
     <footer class="footer">
         <small class="copyright">
-            <img src="https://dn-phphub.qbox.me/uploads/images/201612/12/1/iq7WQc2iuW.png?imageView2/1/w/34/h/34"
+            <img src="http://orxfb7mt0.bkt.clouddn.com/google_%20dinosaur.jpg"
                  class="brand-icon">
             Copyright @ 2017 | All Rights reserved
         </small>
