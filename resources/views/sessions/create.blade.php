@@ -25,9 +25,13 @@
                         <label for="email">邮箱：</label>
                         <input type="text" class="form-control" name="email" value="{{ old('email') }}">
                     </div>
+
                     <div class="form-group">
                         <label for="password">密码：</label>
-                        <input type="password" class="form-control" name="password" value="{{ old('password') }}">
+                        <input type="password" class="form-control" name="password" value="{{ old('password') }}"></div>
+
+                    <div class="form-group">
+                        <label><input type="checkbox" name="remember">记住我</label>
                     </div>
 
                     <button class="btn btn-primary" type="submit">登录</button>
