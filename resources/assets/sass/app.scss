@@ -97,6 +97,14 @@ footer {
 
   small {
     float: left;
+
+    copyright {
+      display: inline-block;
+      float: none !important;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
   }
 
   ul {
