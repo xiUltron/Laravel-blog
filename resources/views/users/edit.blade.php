@@ -1,11 +1,11 @@
-{{--<?php--}}
-{{--/**--}}
- {{--* Created by PhpStorm.--}}
- {{--* User: ultron--}}
- {{--* Date: 2017/9/6--}}
- {{--* Time: 15:29--}}
- {{--*/--}}
-{{--?>--}}
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ultron
+ * Date: 2017/9/6
+ * Time: 15:29
+ */
+?>
 
 {{--@extends('layouts.default)--}}
 {{--@section('title', '更新个人资料')--}}
