@@ -9,16 +9,37 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
+    /**
+     * UsersController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', [
+            'except' => ['show', 'create', 'store']
+        ]);
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function create()
     {
         return view('users.create');
     }
 
+    /**
+     * @param User $user
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show(User $user)
     {
         return view('users.show', compact('user'));
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -37,11 +58,20 @@ class UsersController extends Controller
         return redirect()->route('users.show', [$user]);
     }
 
+    /**
+     * @param User $user
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function edit(User $user)
     {
         return view('users.edit', compact('user'));
     }
 
+    /**
+     * @param User $user
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function update(User $user, Request $request)
     {
         $this->validate($request, [
@@ -52,7 +82,7 @@ class UsersController extends Controller
         $data = [];
         $data['name'] = $request->name;
         if ($request->password) {
-            $data['password']=bcrypt($request->password);
+            $data['password'] = bcrypt($request->password);
         }
         $user->update($data);
 //        $user->update([
