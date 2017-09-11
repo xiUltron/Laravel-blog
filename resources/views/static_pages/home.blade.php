@@ -9,13 +9,12 @@
 @section('content')
     <div class="jumbotron">
         <h1>IT Skynet</h1>
+        <p class="lead">
+            欢迎，
+        </p>
         @if(Auth::check())
             <p class="lead">
-                欢迎 {{ Auth::user()->name }}
-            </p>
-        @else
-            <p class="lead">
-                亲爱的游客
+                {{ Auth::user()->name }}
             </p>
         @endif
         <p class="lead">
