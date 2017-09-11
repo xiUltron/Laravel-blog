@@ -10,7 +10,7 @@
     <div class="jumbotron">
         <h1>IT Skynet</h1>
         <p class="lead">
-            你现在看到的是<a href="http://www.itskynet.com">Laravel 入门教程</a> 的示例项目主页。
+            欢迎 {{ Auth::user()->name }}，你现在看到的是<a href="http://www.itskynet.com">Laravel 入门教程</a> 的示例项目主页。
         </p>
         <p>
             一切，将从这里开始。
