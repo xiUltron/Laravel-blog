@@ -64,6 +64,7 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
+        $this->authorize('update', $user);
         return view('users.edit', compact('user'));
     }
 
@@ -79,6 +80,7 @@ class UsersController extends Controller
             'password' => 'nullable|confirmed|min:6'
         ]);
 
+        $this->authorize('update', $user);
         $data = [];
         $data['name'] = $request->name;
         if ($request->password) {
