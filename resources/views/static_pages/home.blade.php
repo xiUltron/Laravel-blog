@@ -11,7 +11,7 @@
         <h1>IT Skynet</h1>
         <p class="lead">
             欢迎：
-        @if({{Auth::user()->name}})
+        @if(Auth::user()->name)
         {{ Auth::user()->name }}
         @endif
         </p>
