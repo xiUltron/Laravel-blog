@@ -10,7 +10,10 @@
     <div class="jumbotron">
         <h1>IT Skynet</h1>
         <p class="lead">
-            欢迎 {{ Auth::user()->name }}
+            欢迎：
+        @if({{Auth::user()->name}})
+        {{ Auth::user()->name }}
+        @endif
         </p>
         <p class="lead">
             你现在看到的是<a href="http://www.itskynet.com">Laravel 入门教程</a> 的示例项目主页。
