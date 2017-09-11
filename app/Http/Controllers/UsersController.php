@@ -17,6 +17,10 @@ class UsersController extends Controller
         $this->middleware('auth', [
             'except' => ['show', 'create', 'store']
         ]);
+
+        $this->middleware('guest', [
+            'only' => ['create']
+        ]);
     }
 
     /**
