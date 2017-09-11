@@ -9,7 +9,7 @@
 @section('content')
     <div class="jumbotron">
         <h1>IT Skynet</h1>
-        @if(Auth::user()->name)
+        @if(Auth::check())
             <p class="lead">
                 欢迎 {{ Auth::user()->name }}
             </p>
