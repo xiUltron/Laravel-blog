@@ -57,11 +57,7 @@ p {
 /* header */
 
 .navbar-inverse {
-  //background-color: $navbar-color;
-  //position: fixed;
-  //top: 0;
-  background: $navbar-color fixed 0;
-  //opacity: 0.9;
+  background: $navbar-color fixed 0 opacity(0.9);
 }
 
 
