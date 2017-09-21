@@ -6,7 +6,22 @@
  * Time: 14:27
  */
 ?>
-<div> test </div>
+<script type="text/javascript">
+    $(function(){
+        var nav=$(".navbar"); //得到导航对象
+        var win=$(window); //得到窗口对象
+        var sc=$(document);//得到document文档对象。
+        win.scroll(function(){
+            if(sc.scrollTop()>=100){
+                nav.addClass("fixednav");
+                $(".navTmp").fadeIn();
+            }else{
+                nav.removeClass("fixednav");
+                $(".navTmp").fadeOut();
+            }
+        })
+    })
+</script>
 <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="col-md-offset-1 col-md-10">
