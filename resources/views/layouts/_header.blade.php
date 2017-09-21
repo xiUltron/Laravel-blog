@@ -7,7 +7,7 @@
  */
 ?>
 <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="nav-container">
+    <div class="container">
         <div class="col-md-offset-1 col-md-10">
             <a href="/" id="logo">IT Skynet</a>
             <nav>
