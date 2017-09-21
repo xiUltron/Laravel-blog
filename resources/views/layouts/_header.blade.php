@@ -12,7 +12,7 @@
         var win=$(window); //得到窗口对象
         var sc=$(document);//得到document文档对象。
         win.scroll(function(){
-            if(sc.scrollTop()>=100){
+            if(sc.scrollTop()>=nav.offsetTop){
                 nav.addClass("fixednav");
                 $(".navTmp").fadeIn();
             }else{
@@ -23,7 +23,7 @@
     })
 </script>
 <div>
-    <p style="top: 0;">这是导航栏上面的内容</p>
+    <p style="top: 0">这是导航栏上面的内容</p>
 </div>
 <header class="navbar  navbar-inverse">
     <div class="container">
