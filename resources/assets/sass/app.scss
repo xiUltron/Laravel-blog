@@ -59,9 +59,12 @@ p {
 .navbar-inverse {
   background-color: $navbar-color;
   opacity: 0.9;
-  filter: blur(1px);
   position: fixed;
   top: 0;
+  &:before {
+    content: '';
+    filter: blur(10px);
+  }
 }
 
 #logo {
