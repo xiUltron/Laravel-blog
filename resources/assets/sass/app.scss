@@ -58,6 +58,8 @@ p {
 
 .navbar-inverse {
   background-color: $navbar-color;
+  position: fixed;
+  top: 0;
 }
 
 #logo {
