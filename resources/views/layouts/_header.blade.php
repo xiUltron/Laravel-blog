@@ -6,25 +6,6 @@
  * Time: 14:27
  */
 ?>
-<script type="text/javascript">
-    $(function(){
-        var nav=$(".navbar"); //得到导航对象
-        var win=$(window); //得到窗口对象
-        var sc=$(document);//得到document文档对象。
-        win.scroll(function(){
-            if(sc.scrollTop()>=nav.offsetTop()){
-                nav.addClass("fixednav");
-                $(".navTmp").fadeIn();
-            }else{
-                nav.removeClass("fixednav");
-                $(".navTmp").fadeOut();
-            }
-        })
-    })
-</script>
-<div>
-    <p style="top: 0">这是导航栏上面的内容</p>
-</div>
 <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="col-md-offset-1 col-md-10">
