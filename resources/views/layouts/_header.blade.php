@@ -25,7 +25,7 @@
 <div>
     <p>这是导航栏上面的内容</p>
 </div>
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar ">
     <div class="container">
         <div class="col-md-offset-1 col-md-10">
             <a href="/" id="logo">IT Skynet</a>
