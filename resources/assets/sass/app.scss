@@ -62,11 +62,11 @@ p {
   //top: 0;
   background: $navbar-color fixed 0;
   //opacity: 0.9;
+  .container {
+    background: hsla(0,0%,100%,.3);
+  }
 }
 
-.container {
-  background: hsla(0,0%,100%,.3);
-}
 
 #logo {
   float: left;
