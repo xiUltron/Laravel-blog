@@ -57,11 +57,12 @@ p {
 /* header */
 
 .navbar-inverse {
-  background: $navbar-color fixed 0;
+  //background: $navbar-color fixed 0;
 }
 
 .nav-container {
   filter: blur(10px);
+  background: hsla(0,0%,100%,.3);
 }
 
 
