@@ -23,7 +23,7 @@
     })
 </script>
 <div>
-    <p>这是导航栏上面的内容</p>
+    <p style="top: 0;">这是导航栏上面的内容</p>
 </div>
 <header class="navbar  navbar-inverse">
     <div class="container">
