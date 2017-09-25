@@ -57,6 +57,7 @@ p {
 /* header */
 
 .navbar-inverse {
+  border-color: rgba(0, 0, 0, 0);
   background: rgba(36, 41, 46, 0);
   &:hover {
     background: rgba(36, 41, 46, 0.9);
