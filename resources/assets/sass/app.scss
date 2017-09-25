@@ -60,6 +60,7 @@ p {
   background: rgba(36, 41, 46, 0);
   &:hover {
     background: rgba(36, 41, 46, 0.9);
+    transition: 0.3s linear;
   }
 }
 
