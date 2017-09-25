@@ -6,9 +6,9 @@
 {{--*/--}}
 @extends('layouts.default')
 @section('title','主页')
-@section('background', 'background=http://orxfb7mt0.bkt.clouddn.com/slider2.jpg')
+{{--@section('background', 'background=http://orxfb7mt0.bkt.clouddn.com/slider2.jpg')--}}
 @section('content')
-    <div class="jumbotron">
+    <div class="jumbotron" style="background: url(http://orxfb7mt0.bkt.clouddn.com/slider2.jpg)">
         <h1>IT Skynet</h1>
         @if(Auth::check())
             <p class="lead">
