@@ -18,6 +18,9 @@ class UsersTableSeeder extends Seeder
 
         // 修改第一位 id 的信息
         $user = User::find(1);
+        $user->name = 'ultron';
+        $user->email = 'ischenxi@gmail.com';
+        $user->password = bcrypt('123456');
         $user->is_admin = true;
         $user->save();
     }
