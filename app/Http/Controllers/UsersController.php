@@ -106,7 +106,7 @@ class UsersController extends Controller
         return view('users.index', compact('users'));
     }
 
-    public function destory(User $user)
+    public function destroy(User $user)
     {
         $user->delete();
         session()->flash('success', '成功删除用户');
