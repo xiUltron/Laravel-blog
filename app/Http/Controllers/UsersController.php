@@ -105,4 +105,11 @@ class UsersController extends Controller
         $users = User::paginate(16);
         return view('users.index', compact('users'));
     }
+
+    public function destory(User $user)
+    {
+        $user->delete();
+        session()->flash('success', '成功删除用户');
+        return back();
+    }
 }
