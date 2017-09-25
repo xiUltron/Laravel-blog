@@ -6,7 +6,7 @@
 {{--*/--}}
 @extends('layouts.default')
 @section('title','主页')
-@section('background', 'background=http://orxfb7mt0.bkt.clouddn.com/slider2.jpg')
+@section('background', 'background=http://orxfb7mt0.bkt.clouddn.com/slider2.jpg no-repeat')
 @section('content')
     <div class="jumbotron">
         <h1>IT Skynet</h1>
