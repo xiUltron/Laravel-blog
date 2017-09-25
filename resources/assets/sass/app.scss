@@ -57,7 +57,10 @@ p {
 /* header */
 
 .navbar-inverse {
-  background: rgba(36, 41, 46, .9);
+  background: rgba(36, 41, 46, 0);
+  &:hover {
+    background: rgba(36, 41, 46, 0.9);
+  }
 }
 
 #logo {
