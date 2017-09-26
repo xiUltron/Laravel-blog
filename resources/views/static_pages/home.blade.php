@@ -6,9 +6,10 @@
 {{--*/--}}
 @extends('layouts.default')
 @section('title','主页')
-@section('background')
-    class="home-body"
-@stop
+{{--@section('background')--}}
+    {{--class="home-body"--}}
+{{--@stop--}}
+@section('background','background=http://orxfb7mt0.bkt.clouddn.com/140e89ff8a38d078ab4e3ee77c691f5d.jpg')
 @section('content')
     <div>
         <div class="jumbotron">
