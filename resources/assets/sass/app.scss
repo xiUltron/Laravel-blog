@@ -11,10 +11,20 @@ $navbar-color: #24292e;
 
 body {
   padding-top: 60px;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(90deg, #ef4549, #ef4549 20%, #f79945 20%, #f79945 40%, #54ba5e 40%, #54ba5e 60%, #5897d0 60%, #5897d0 80%, #a860a9 80%, #a860a9);
+    height: 3px;
+    width: 100%;
+    content: "";
+  }
 }
 
 section {
-  overflow:auto;
+  overflow: auto;
 }
 
 textarea {
@@ -185,8 +195,7 @@ input {
   margin-top: 50px;
 }
 
-
-  /* Users edit */
+/* Users edit */
 
 .gravatar_edit {
   margin: 15px auto;
@@ -205,7 +214,7 @@ input {
   padding-left: 0;
   li {
     overflow: auto;
-    padding:10px 0;
+    padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
 }
