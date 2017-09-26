@@ -6,6 +6,20 @@
  * Time: 14:27
  */
 ?>
+<script type="text/javascript">
+    $(function(){
+            $(window).scroll(function() {
+                if($(window).scrollTop() >= 1) {
+                    $(".navbar-inverse").addClass("navbar-inverse-pull");
+                }else{
+                    var current = $(".navbar-inverse");
+                    current.removeClass("navbar-inverse-pull ");
+                    current = $(this);
+                }
+            })
+        }
+    );
+</script>
 <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="col-md-offset-1 col-md-10">
