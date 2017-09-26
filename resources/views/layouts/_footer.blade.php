@@ -6,7 +6,7 @@
  * Time: 16:14
  */
 ?>
-<div class="col-md-12">
+<div class="col-lg-12">
     <footer class="footer">
         <small class="slogon">
             <img src="http://orxfb7mt0.bkt.clouddn.com/COLOR@2x_36px.png" class="brand-icon">
