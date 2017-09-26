@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="/css/app.css">
     <title>@yield('title', 'Sample') —— IT Skynet</title>
 </head>
-<body @yield('background', '') style="background: url("")">
+{{--<body @yield('background', '')>--}}
+<body class="home-body">
 @include('layouts._header')
 <div class="container">
     <div class="col-md-offset-1 col-md-10">
