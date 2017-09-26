@@ -18,8 +18,8 @@
     <div class="col-md-offset-1 col-md-10">
         @include('shared._messages')
         @yield('content')
-        @include('layouts._footer')
     </div>
+    @include('layouts._footer')
 </div>
 <script src="/js/app.js"></script>
 </body>
