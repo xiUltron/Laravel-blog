@@ -72,14 +72,16 @@ p {
 
 .navbar-inverse {
   border-color: rgba(0, 0, 0, 0);
-  background: rgba(36, 41, 46, 0);
-  &:hover {
-    background: rgba(36, 41, 46, 0.9);
-    transition: 0.3s linear;
-    #logo {
-      color: rgb(200, 200, 200);
-    }
-  }
+  //background: rgba(36, 41, 46, 0);
+  //&:hover {
+  //  background: rgba(36, 41, 46, 0.9);
+  //  transition: 0.3s linear;
+  //  #logo {
+  //    color: rgb(200, 200, 200);
+  //  }
+  //}
+  background: #fff;
+  box-shadow: 0 3px 0 #333;
 }
 
 #logo {
