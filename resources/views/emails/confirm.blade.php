@@ -25,7 +25,7 @@
 <p>
     请点击下面的链接完成注册
 </p>
-<a href="{{ route('confirm_email', $user->activation_token) }}" class="btn btn-lg btn-success" role="button">
+<a href="{{ route('confirm_email', $user->activation_token) }}" role="button" style="text-align: center; align-content: center; align-items: center; background: #017ee6;">
     验证您的电子邮件
 </a>
 <p>
