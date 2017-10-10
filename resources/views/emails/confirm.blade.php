@@ -14,13 +14,13 @@
     <title>注册确认链接</title>
 </head>
 <body>
-<h1>{{ $user()->name }} 您好！感谢在 itskynet 进行注册！</h1>
+<h1>{{ $user->name }} 您好！感谢在 itskynet 进行注册！</h1>
 <p>
     我们即将完成您的账户创建。您可以使用此账户登录 www.itskynet.com。
 </p>
 <p>
-    登录邮箱：{{ $user()->email }}
-    显示昵称：{{ $user()->name }}
+    登录邮箱：{{ $user->email }}
+    显示昵称：{{ $user->name }}
 </p>
 <p>
     请点击下面的链接完成注册
