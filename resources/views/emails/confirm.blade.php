@@ -18,7 +18,7 @@
 <p>
     我们即将完成您的账户创建。您可以使用此账户登录 www.itskynet.com。
 </p>
-<p style="cursor: default; color: #000; text-decoration: none;">
+<p>
     登录邮箱：{{ $user->email }}<br/>
     显示名称：{{ $user->name }}
 </p>
@@ -31,5 +31,6 @@
 <p>
     如果你没有注册过，可放心忽略这封电子邮件。别人可能错误地键入了你的电子邮件地址。
 </p>
+<p>- ultron@skynet</p>
 </body>
 </html>
