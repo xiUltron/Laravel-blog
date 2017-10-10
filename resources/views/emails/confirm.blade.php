@@ -26,7 +26,7 @@
     请点击链接完成邮箱验证
     <a href="{{ route('confirm_email', $user->activation_token) }}">
         验证您的电子邮件
-    </a> 或直接访问<br/>
+    </a>或直接访问<br/>
 {{ route('confirm_email', $user->activation_token) }}
 <p>
     如果你没有注册过，可放心忽略这封电子邮件。别人可能错误地键入了你的电子邮件地址。
