@@ -24,10 +24,10 @@
 </p>
 <p>
     请点击下面的链接完成注册
-    <a href="{{ route('confirm_email', $user->activation_token) }}" class="btn btn-lg btn-success">
-        验证您的电子邮件
-    </a>
 </p>
+<a href="{{ route('confirm_email', $user->activation_token) }}" class="btn btn-lg btn-success" role="button">
+    验证您的电子邮件
+</a>
 <p>
     如果你没有注册过，可放心忽略这封电子邮件。别人可能错误地键入了你的电子邮件地址。
 </p>
