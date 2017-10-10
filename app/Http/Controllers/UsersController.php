@@ -89,7 +89,7 @@ class UsersController extends Controller
 
         Auth::login($user);
         session()->flash('success', 'Thank you for verifying your email！');
-        return redirect()->route('users.show', [$user]);
+//        return redirect()->route('users.show', [$user]);
     }
 
     /**
