@@ -84,11 +84,11 @@ class UsersController extends Controller
         $user = User::where('activation_token', $token)->firstOrFail();
 
         $user->activated = true;
-        $user->activation_token = null;
+//        $user->activation_token = null;
         $user->save();
 
         Auth::login($user);
-        session()->flash('success', '恭喜你，激活成功！');
+        session()->flash('success', 'Thank you for verifying your email！');
         return redirect()->route('users.show', [$user]);
     }
 
