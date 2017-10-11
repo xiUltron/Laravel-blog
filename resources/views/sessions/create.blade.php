@@ -27,13 +27,11 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password">密码：</label>
+                        <label for="password">密码（<a href="{{ route('password.request') }}" type="float:right;">忘记密码？</a>）：</label>
                         <input type="password" class="form-control" name="password" value="{{ old('password') }}"></div>
 
                     <div class="form-group">
-                        <label><input type="checkbox" name="remember"> 记住我
-                            <a href="{{ route('password.request') }}" type="float:right;">忘记密码？</a>
-                        </label>
+                        <label><input type="checkbox" name="remember"> 记住我</label>
                     </div>
 
                     <button class="btn btn-primary" type="submit">登录</button>
