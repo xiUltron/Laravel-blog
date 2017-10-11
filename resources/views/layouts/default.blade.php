@@ -21,6 +21,10 @@
     </div>
     @include('layouts._footer')
 </div>
+<div class="go-top">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+</div>
 <script src="/js/app.js"></script>
 </body>
 </html>
