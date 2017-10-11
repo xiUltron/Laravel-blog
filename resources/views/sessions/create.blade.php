@@ -32,7 +32,7 @@
 
                     <div class="form-group">
                         <label><input type="checkbox" name="remember"> 记住我
-                            <a href="{{ route('password.request') }}">忘记密码？</a>
+                            <a href="{{ route('password.request') }}" type="float:right;">忘记密码？</a>
                         </label>
                     </div>
 
