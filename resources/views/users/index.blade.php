@@ -21,8 +21,4 @@
 
         {!! $users->render() !!}
     </div>
-    <div class="go-top">
-        <div class="arrow"></div>
-        <div class="stick"></div>
-    </div>
 @stop
