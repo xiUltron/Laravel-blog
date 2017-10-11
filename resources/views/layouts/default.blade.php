@@ -13,10 +13,6 @@
     <title>@yield('title', 'Sample') —— IT Skynet</title>
 </head>
 <body @yield('background')>
-<div class="go-top">
-    <div class="arrow"></div>
-    <div class="stick"></div>
-</div>
 @include('layouts._header')
 <div class="container">
     <div class="col-md-offset-1 col-md-10">
