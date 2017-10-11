@@ -258,32 +258,32 @@ input {
   background-color: #eddec2;
   border-radius: 3px;
   cursor: pointer;
-}
 
-.go-top:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
+  &:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
 
-.go-top .arrow {
-  position: absolute;
-  left: 10px;
-  top: -1px;
-  width: 0;
-  height: 0;
-  border: 9px solid transparent;
-  border-bottom-color: #cc3333;
-}
+  .arrow {
+    position: absolute;
+    left: 10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #cc3333;
+  }
 
-.go-top .stick {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  width: 8px;
-  height: 14px;
-  display: block;
-  background-color: #cc3333;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
+  .stick {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 8px;
+    height: 14px;
+    display: block;
+    background-color: #cc3333;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+  }
 }
