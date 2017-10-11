@@ -20,10 +20,10 @@
         @yield('content')
     </div>
     @include('layouts._footer')
-</div>
-<div class="go-top">
-    <div class="arrow"></div>
-    <div class="stick"></div>
+    <div class="go-top">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+    </div>
 </div>
 <script src="/js/app.js"></script>
 </body>
