@@ -31,7 +31,7 @@
     }
 ?>
 @component('mail::button', ['url' => $actionUrl, 'color' => $color])
-重置密码
+{{ $actionText }}
 @endcomponent
 @endisset
 
@@ -51,7 +51,7 @@ Regards,<br>{{ config('app.name') }}
 {{-- Subcopy --}}
 @isset($actionText)
 @component('mail::subcopy')
-如果你无法点击 "重置密码" 按钮, 把下面的链接复制到你的浏览器地址栏中以访问: [{{ $actionUrl }}]({{ $actionUrl }})
+如果你无法点击上面的 "{{ $actionText }}" 按钮，请点击下面的链接或者把它复制到浏览器地址栏。 [{{ $actionUrl }}]({{ $actionUrl }})
 @endcomponent
 @endisset
 @endcomponent
