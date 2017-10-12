@@ -15,7 +15,9 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h5>注册
-                    <span class="pull-right">已有账号？<a href="{{ route('login') }}" class="btn-sm btn-success" role="button">登录</a></span>
+                    <span class="pull-right">已有账号？
+                        <a href="{{ route('login') }}" class="btn-sm btn-success" role="button">登录</a>
+                    </span>
                 </h5>
             </div>
             <div class="panel-body">
