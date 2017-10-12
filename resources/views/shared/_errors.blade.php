@@ -13,7 +13,6 @@
         <ul>
             @foreach($errors->all() as $error)
                 <li>{{ $error }}</li>
-                <a class="close" href="#" data-dismiss="alert">&times;</a>
             @endforeach
         </ul>
     </div>
