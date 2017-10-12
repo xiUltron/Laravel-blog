@@ -15,7 +15,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h5>注册</h5>
-                <h5 class="right">已有账号？现在<a href="{{ route('login') }}">登录</a></h5>
+                <h5 class="text-right">已有账号？现在<a href="{{ route('login') }}">登录</a></h5>
             </div>
             <div class="panel-body">
                 @include('shared._errors')
