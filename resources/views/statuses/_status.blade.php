@@ -11,13 +11,13 @@
     <a href="{{ route('users.show', $user->id) }}">
         <img src="{{ $user->gravatar() }}" alt="{{ $user->name }}" class="gravatar">
     </a>
-    <span class="user">
+    <div class="user">
         <a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a>
-    </span>
-    <span class="timestamp">
+    </div>
+    <div class="timestamp">
         {{ $status->created_at->diffForHumans() }}
-    </span>
-    <span class="content">
+    </div>
+    <div class="content">
         {{ $status->content }}
-    </span>
+    </div>
 </li>
