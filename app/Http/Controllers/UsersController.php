@@ -9,6 +9,10 @@ use Mail;
 
 //use App\Http\Requests;
 
+/**
+ * Class UsersController
+ * @package App\Http\Controllers
+ */
 class UsersController extends Controller
 {
     /**
@@ -39,7 +43,10 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $statuses = $user->statuses()
+            ->orderBy('created_at', 'desc')
+            ->paginate(30);
+        return view('users.show', compact('user', 'statuses'));
     }
 
     /**
@@ -65,6 +72,9 @@ class UsersController extends Controller
         return redirect('/');
     }
 
+    /**
+     * @param $user
+     */
     protected function sendEmailConfirmationTo($user)
     {
         $view = 'emails.confirm';
@@ -79,6 +89,10 @@ class UsersController extends Controller
         });
     }
 
+    /**
+     * @param $token
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function confirmEmail($token)
     {
         $user = User::where('activation_token', $token)->firstOrFail();
@@ -130,12 +144,19 @@ class UsersController extends Controller
         return redirect()->route('users.show', $user->id);
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $users = User::paginate(16);
         return view('users.index', compact('users'));
     }
 
+    /**
+     * @param User $user
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function destroy(User $user)
     {
         $user->delete();
