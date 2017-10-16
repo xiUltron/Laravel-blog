@@ -7,6 +7,10 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Notifications\ResetPassword;
 
+/**
+ * Class User
+ * @package App\Models
+ */
 class User extends Authenticatable
 {
     use Notifiable;
@@ -34,12 +38,19 @@ class User extends Authenticatable
      */
     protected $table = 'users';
 
+    /**
+     * @param int $size
+     * @return string
+     */
     public function gravatar($size = 100)
     {
         $hash = md5(strtolower(trim($this->attributes['email'])));
         return "http://www.gravatar.com/avatar/$hash?s=$size";
     }
 
+    /**
+     *
+     */
     protected static function boot()
     {
         parent::boot();
@@ -49,8 +60,19 @@ class User extends Authenticatable
         });
     }
 
+    /**
+     * @param string $token
+     */
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new ResetPassword($token));
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
     }
 }
