@@ -7,10 +7,18 @@
  */
 ?>
 
-<form action="{{ route('statuses.store') }}" method="post">
+{{--<form action="{{ route('statuses.store') }}" method="post">--}}
+    {{--@include('shared._errors')--}}
+    {{--{{ csrf_field() }}--}}
+    {{--<textarea class="form-control" rows="3" placeholder="聊聊新鲜事儿..."--}}
+              {{--name="content">{{ old('content') }}</textarea>--}}
+    {{--<button type="submit" class="btn btn-primary pull-right">发布</button>--}}
+{{--</form>--}}
+
+<div id="StatusPublishForm">
     @include('shared._errors')
     {{ csrf_field() }}
     <textarea class="form-control" rows="3" placeholder="聊聊新鲜事儿..."
               name="content">{{ old('content') }}</textarea>
-    <button type="submit" class="btn btn-primary pull-right">发布</button>
-</form>
+    <button type="button" class="btn btn-primary pull-right" name="btnPublish">发布</button>
+</div>
