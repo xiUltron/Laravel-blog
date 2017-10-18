@@ -9,6 +9,7 @@
         <!doctype html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/app.css">
     <title>@yield('title', 'Sample') —— IT Skynet</title>
 </head>
