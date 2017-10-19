@@ -4,7 +4,7 @@ $.ajaxSetup({
     }
 });
 $('button[name="btnPublish"]').click( function () {
-    $.post('statuses', $('#statusPublishForm').val(), function (html) {
+    $.post('statuses', {content:'haha'}, function (html) {
         $('.statuses').prepend(html)
     })
 });
