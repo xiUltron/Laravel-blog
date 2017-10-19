@@ -4,10 +4,11 @@ $.ajaxSetup({
     }
 });
 $('button[name="btnPublish"]').click(function () {
-    $.post('statuses.store',
-        $('#statusTextArea').val(),
-        function (html) {
-            $('.statuses').prepend(html)
-        }
-    )
+    // $.post('statuses/store',
+    //     $('#statusTextArea').val(),
+    //     function (html) {
+    //         $('.statuses').prepend(html)
+    //     }
+    // )
+    alert('??');
 });
