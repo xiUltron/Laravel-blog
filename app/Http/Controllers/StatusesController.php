@@ -27,6 +27,7 @@ class StatusesController extends Controller
 //        return view('shared._feed');
 //        return redirect()->back();
 //        return "asdb";
+        return $request->content;
     }
 
     public function destroy(Status $status)
