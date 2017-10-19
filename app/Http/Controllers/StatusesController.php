@@ -24,7 +24,7 @@ class StatusesController extends Controller
             'content' => $request->content
         ]);
 
-        return view('shared._feed');
+        return view('statuses._status');
     }
 
     public function destroy(Status $status)
