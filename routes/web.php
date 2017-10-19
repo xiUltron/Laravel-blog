@@ -41,6 +41,6 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
 
-//Route::resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]); 相当于：
+//Route::resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]); 和下两句一样，但是 destroy 方法，会出现未授权错误，要权限判断删掉才可以
 Route::post('statuses/store', 'StatusesController@store')->name('statuses.store');
 Route::delete('statuses/{id}', 'StatusesController@destroy')->name('statuses.destroy');
