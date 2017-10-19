@@ -25,6 +25,6 @@
 </div>
 <div id="app"></div>
 <script src="/js/app.js"></script>
-<script src="/js/addStatus.js?tiem=New Date()"></script>
+<script src="/js/addStatus.js?time=New Date()"></script>
 </body>
 </html>
