@@ -4,5 +4,5 @@ $.ajaxSetup({
     }
 });
 $('button[name="btnPublish"]').click(function () {
-    alert('??');
+    alert('????');
 });
