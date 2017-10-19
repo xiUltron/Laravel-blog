@@ -4,10 +4,11 @@ $.ajaxSetup({
     }
 });
 $('button[name="btnPublish"]').click(function () {
+    sHtml = "<li>123123</li>";
     $.post('statuses/store',
         {content: $('#statusTextArea').val()},
-        function (html) {
-            $('.statuses').prepend(html);
+        function () {
+            $('.statuses').prepend(sHtml);
         }
     )
 });
