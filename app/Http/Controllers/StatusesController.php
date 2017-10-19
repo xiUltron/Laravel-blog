@@ -24,7 +24,8 @@ class StatusesController extends Controller
             'content' => $request->content
         ]);
 
-        return view('statuses._status');
+//        return view('statuses._status');
+        return redirect()->back();
     }
 
     public function destroy(Status $status)
