@@ -4,5 +4,9 @@ $.ajaxSetup({
     }
 });
 $('button[name="btnPublish"]').click(function () {
-    alert('????');
+    $.post('statuses/store',
+        $('#statusTextArea').val()
+    //     function (html) {
+    //
+    // }
 });
