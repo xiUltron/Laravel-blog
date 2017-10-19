@@ -30,7 +30,7 @@ class StatusesController extends Controller
 
     public function destroy(Status $status)
     {
-        $this->authorize('destroy', $status);
+//        $this->authorize('destroy', $status);
         $status->delete();
         session()->flash('success', '微博已成功被删除！');
         return redirect()->back();
