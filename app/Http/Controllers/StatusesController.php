@@ -23,7 +23,8 @@ class StatusesController extends Controller
         Auth::user()->statuses()->create([
             'content' => $request->content
         ]);
-        return redirect()->back();
+
+        return view('shared._status_form');
     }
 
     public function destroy(Status $status)
