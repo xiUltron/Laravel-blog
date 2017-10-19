@@ -24,7 +24,7 @@ class StatusesController extends Controller
             'content' => $request->content
         ]);
 
-        return view('statuses._status');
+        return view('shared._feed');
 //        return redirect()->back();
     }
 
