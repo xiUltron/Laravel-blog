@@ -6,7 +6,5 @@ $.ajaxSetup({
 $('button[name="btnPublish"]').click(function () {
     $.post('statuses/store',
         $('#statusTextArea').val()
-    //     function (html) {
-    //
-    // }
+    )
 });
