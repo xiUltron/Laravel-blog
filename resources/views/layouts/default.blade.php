@@ -5,7 +5,6 @@
  * Date: 2017/8/4
  * Time: 16:26
  */
-$jsTimeStamp = time();
 ?>
         <!doctype html>
 <html>
@@ -26,6 +25,6 @@ $jsTimeStamp = time();
 </div>
 <div id="app"></div>
 <script src="/js/app.js"></script>
-<script src="/js/addStatus.js?=<?php echo $jsTimeStamp;?>"></script>
+<script src="/js/addStatus.js?time=<?php echo time();?>"></script>
 </body>
 </html>
